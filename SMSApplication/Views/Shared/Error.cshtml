@@ -1,0 +1,21 @@
+﻿
+@{
+    ViewData["Title"] = "Error";
+}
+
+<div class="row">
+    <div class="col-12 text-center">
+        <h1 class="text-danger text-center">Error.</h1>
+        <h2 class="text-danger text-center">An error occurred while processing your request.</h2>
+        <button id="btnHome" class="btn btn-info text-center">Take Me Home</button>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        $("btnHome").click(function () {
+            window.location.href = "/Account/Login"
+
+        })
+    })
+</script>
